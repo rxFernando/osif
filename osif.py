@@ -842,7 +842,7 @@ def dump_mail():
                         z = json.loads(x.text)
 
 			try:
-                                out.write(z['name']+': '+z['email'] + '\n')
+                                out.write(z['name']+'- '+z['birthday']+': '+z['email'] + '\n')
 			        print W + '[' + G + z['name'] + W + ']' + R + ' >> ' + W + z['email']
 			except KeyError:
 				pass
